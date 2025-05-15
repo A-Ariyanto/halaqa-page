@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import clsx from 'clsx'
 
-import backgroundImage from '@/images/background.jpg'
+import backgroundImage from '@/images/background-new.jpg'
 
 export function BackgroundImage({
   className,
@@ -13,7 +13,7 @@ export function BackgroundImage({
   return (
     <div
       className={clsx(
-        'absolute inset-0 overflow-hidden bg-indigo-50',
+        'absolute inset-0 overflow-hidden bg-white',
         className,
       )}
     >
