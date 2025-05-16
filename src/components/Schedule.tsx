@@ -21,153 +21,129 @@ interface Day {
 
 const schedule: Array<Day> = [
   {
-    date: 'April 4',
+    date: 'Term 1',
     dateTime: '2022-04-04',
     summary:
       'The first day of the conference is focused on dark patterns for ecommerce.',
     timeSlots: [
       {
-        name: 'Steven McHail',
-        description: 'Not so one-time payments',
-        start: '9:00AM',
-        end: '10:00AM',
+        name: 'Week 1',
+        description: 'Importance of Community and Faith',
+        start: '',
+        end: '',
       },
       {
-        name: 'Jaquelin Isch',
-        description: 'The finer print',
-        start: '10:00AM',
-        end: '11:00AM',
+        name: 'Week 2',
+        description: 'Preparations for Ramadan',
+        start: '',
+        end: '',
       },
       {
-        name: 'Dianne Guilianelli',
-        description: 'Post-purchase blackmail',
-        start: '11:00AM',
-        end: '12:00PM',
+        name: 'Week 3',
+        description: 'Ramadhan: Tilawah & tadabbur',
+        start: '',
+        end: '',
       },
       {
-        name: 'Lunch',
-        description: null,
-        start: '12:00PM',
-        end: '1:00PM',
+        name: 'Week 4',
+        description: 'Ramadhan: Tilawah & tadabbur',
+        start: '',
+        end: '',
       },
       {
-        name: 'Ronni Cantadore',
-        description: 'Buy or die',
-        start: '1:00PM',
-        end: '2:00PM',
+        name: 'Week 5',
+        description: 'Ramadhan: Tilawah & tadabbur',
+        start: '',
+        end: '',
       },
       {
-        name: 'Erhart Cockrin',
-        description: 'In-person cancellation',
-        start: '2:00PM',
-        end: '3:00PM',
+        name: 'Week 6',
+        description: 'Rabbani Generation',
+        start: '',
+        end: '',
       },
       {
-        name: 'Parker Johnson',
-        description: 'The pay/cancel switcheroo',
-        start: '3:00PM',
-        end: '4:00PM',
+        name: 'Week 7',
+        description: 'The Role of Charity in Islam',
+        start: '',
+        end: '',
+      },
+      {
+        name: 'Week 8',
+        description: 'Dawah and tarbiyah',
+        start: '',
+        end: '',
       },
     ],
   },
   {
-    date: 'April 5',
+    date: 'Term 2',
     dateTime: '2022-04-05',
     summary:
       'Next we spend the day talking about deceiving people with technology.',
     timeSlots: [
       {
-        name: 'Damaris Kimura',
-        description: 'The invisible card reader',
-        start: '9:00AM',
-        end: '10:00AM',
+        name: 'Week 1',
+        description: '',
+        start: '',
+        end: '',
       },
       {
-        name: 'Ibrahim Frasch',
-        description: 'Stealing fingerprints',
-        start: '10:00AM',
-        end: '11:00AM',
+        name: 'Week 2',
+        description: '',
+        start: '',
+        end: '',
       },
       {
-        name: 'Cathlene Burrage',
-        description: 'Voting machines',
-        start: '11:00AM',
-        end: '12:00PM',
+        name: 'Week 3',
+        description: 'Movie Night – Da’wah Through Stories',
+        start: '',
+        end: '',
       },
       {
-        name: 'Lunch',
-        description: null,
-        start: '12:00PM',
-        end: '1:00PM',
+        name: 'Week 4',
+        description: '',
+        start: '',
+        end: '',
       },
       {
-        name: 'Rinaldo Beynon',
-        description: 'Blackhat SEO that works',
-        start: '1:00PM',
-        end: '2:00PM',
+        name: 'Week 5',
+        description: 'Iftar Jama’ie (Community Iftar)',
+        start: '',
+        end: '',
       },
       {
-        name: 'Waylon Hyden',
-        description: 'Turning your audience into a botnet',
-        start: '2:00PM',
-        end: '3:00PM',
+        name: 'Week 6',
+        description: 'O-Week Trip with MyFundAction',
+        start: '',
+        end: '',
       },
       {
-        name: 'Giordano Sagucio',
-        description: 'Fly phishing',
-        start: '3:00PM',
-        end: '4:00PM',
+        name: 'Week 7',
+        description: 'Sports & Brotherhood – ISOC Football',
+        start: '',
+        end: '',
+      },
+      {
+        name: 'Week 8',
+        description: 'Reflections & Celebrations',
+        start: '',
+        end: '',
       },
     ],
   },
   {
-    date: 'April 6',
+    date: 'Term 3',
     dateTime: '2022-04-06',
     summary:
       'We close out the event previewing new techniques that are still in development.',
     timeSlots: [
       {
-        name: 'Andrew Greene',
-        description: 'Neuralink dark patterns',
-        start: '9:00AM',
-        end: '10:00AM',
-      },
-      {
-        name: 'Heather Terry',
-        description: 'DALL-E for passports',
-        start: '10:00AM',
-        end: '11:00AM',
-      },
-      {
-        name: 'Piers Wilkins',
-        description: 'Quantum password cracking',
-        start: '11:00AM',
-        end: '12:00PM',
-      },
-      {
-        name: 'Lunch',
-        description: null,
-        start: '12:00PM',
-        end: '1:00PM',
-      },
-      {
-        name: 'Gordon Sanderson',
-        description: 'SkyNet is coming',
-        start: '1:00PM',
-        end: '2:00PM',
-      },
-      {
-        name: 'Kimberly Parsons',
-        description: 'Dark patterns for the metaverse',
-        start: '2:00PM',
-        end: '3:00PM',
-      },
-      {
-        name: 'Richard Astley',
-        description: 'Knowing the game and playing it',
-        start: '3:00PM',
-        end: '4:00PM',
-      },
+        name: 'TBA',
+        description: '',
+        start: '',
+        end: '',
+      }
     ],
   },
 ]
@@ -261,7 +237,7 @@ function TimeSlots({ day, className }: { day: Day; className?: string }) {
       {day.timeSlots.map((timeSlot, timeSlotIndex) => (
         <li
           key={timeSlot.start}
-          aria-label={`${timeSlot.name} talking about ${timeSlot.description} at ${timeSlot.start} - ${timeSlot.end} PST`}
+          aria-label={`${timeSlot.name} talking about ${timeSlot.description} at ${timeSlot.start} - ${timeSlot.end}`}
         >
           {timeSlotIndex > 0 && (
             <div className="mx-auto mb-8 h-px w-48 bg-indigo-500/10" />
@@ -282,7 +258,6 @@ function TimeSlots({ day, className }: { day: Day; className?: string }) {
             <time dateTime={`${day.dateTime}T${timeSlot.end}-08:00`}>
               {timeSlot.end}
             </time>{' '}
-            PST
           </p>
         </li>
       ))}
@@ -309,13 +284,10 @@ export function Schedule() {
       <Container className="relative z-10">
         <div className="mx-auto max-w-2xl lg:mx-0 lg:max-w-4xl lg:pr-24">
           <h2 className="font-display text-4xl font-medium tracking-tighter text-blue-600 sm:text-5xl">
-            Our three day schedule is jam-packed with brilliant, creative, evil
-            geniuses.
+            Our schedule for the year
           </h2>
           <p className="mt-4 font-display text-2xl tracking-tight text-blue-900">
-            The worst people in our industry giving the best talks you’ve ever
-            seen. Nothing will be recorded and every attendee has to sign an NDA
-            to watch the talks.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia consequatur soluta nisi error nihil est in voluptate tenetur, reprehenderit quam quod harum odit officiis corrupti? Numquam facere reprehenderit similique voluptatem!
           </p>
         </div>
       </Container>
