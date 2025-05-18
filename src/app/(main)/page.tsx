@@ -1,5 +1,5 @@
 import { Hero } from '@/components/Hero'
-import { Newsletter } from '@/components/Newsletter'
+import { Newsletter } from '@/components/QrCode'
 import { Schedule } from '@/components/Schedule'
 import { Speakers } from '@/components/Speakers'
 import { Sponsors } from '@/components/Sponsors'
