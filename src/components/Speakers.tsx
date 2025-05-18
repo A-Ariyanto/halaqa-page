@@ -20,7 +20,7 @@ const teams = [
   {
     name: 'Our',
     title: 'Speakers',
-    dateTime: '2022-04-04',
+    sectionNumber: '1',
     speakers: [
       {
         name: 'Dr Wan Ahmad Afiq',
@@ -37,7 +37,7 @@ const teams = [
   {
     name: 'Our',
     title: 'Volunteers',
-    dateTime: '2022-04-05',
+    sectionNumber: '2',
     speakers: [
       {
         name: 'Abdullah Ariyanto',
@@ -137,7 +137,7 @@ export function Speakers() {
               {({ selectedIndex }) => (
                 <>
                   {teams.map((day, dayIndex) => (
-                    <div key={day.dateTime} className="relative lg:pl-8">
+                    <div key={day.sectionNumber} className="relative lg:pl-8">
                       <DiamondIcon
                         className={clsx(
                           'absolute top-[0.5625rem] left-[-0.5px] hidden h-1.5 w-1.5 overflow-visible lg:block',
@@ -160,12 +160,6 @@ export function Speakers() {
                             {day.name}
                           </Tab>
                         </div>
-                        <time
-                          dateTime={day.dateTime}
-                          className="mt-1.5 block text-2xl font-semibold tracking-tight text-orange-900"
-                        >
-                          {day.title}
-                        </time>
                       </div>
                     </div>
                   ))}
@@ -176,7 +170,7 @@ export function Speakers() {
           <TabPanels className="lg:col-span-3">
             {teams.map((day) => (
               <TabPanel
-                key={day.dateTime}
+                key={day.sectionNumber}
                 className="grid grid-cols-1 gap-x-8 gap-y-10 data-selected:not-data-focus:outline-hidden sm:grid-cols-2 sm:gap-y-16 md:grid-cols-3"
                 unmount={false}
               >
