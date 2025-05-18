@@ -22,9 +22,9 @@ interface Day {
 const schedule: Array<Day> = [
   {
     date: 'Term 1',
-    dateTime: '2022-04-04',
+    dateTime: '17-02-2025',
     summary:
-      'The first day of the conference is focused on dark patterns for ecommerce.',
+      'Ramadhan is a month of fasting, prayer, reflection and community.',
     timeSlots: [
       {
         name: 'Week 1',
@@ -78,9 +78,9 @@ const schedule: Array<Day> = [
   },
   {
     date: 'Term 2',
-    dateTime: '2022-04-05',
+    dateTime: '02-06-2025',
     summary:
-      'Next we spend the day talking about deceiving people with technology.',
+      'Eid al-Adha is the second of two Islamic holidays celebrated worldwide each year.',
     timeSlots: [
       {
         name: 'Week 1',
@@ -134,9 +134,9 @@ const schedule: Array<Day> = [
   },
   {
     date: 'Term 3',
-    dateTime: '2022-04-06',
+    dateTime: '15-09-2025',
     summary:
-      'We close out the event previewing new techniques that are still in development.',
+      'We are close to the end of the year. So make sure to make the most of it.',
     timeSlots: [
       {
         name: 'TBA',
@@ -215,10 +215,10 @@ function ScheduleTabbed() {
 function DaySummary({ day }: { day: Day }) {
   return (
     <>
-      <h3 className="text-2xl font-semibold tracking-tight text-blue-900">
+      <h3 className="text-2xl font-semibold tracking-tight text-orange-900">
         <time dateTime={day.dateTime}>{day.date}</time>
       </h3>
-      <p className="mt-1.5 text-base tracking-tight text-blue-900">
+      <p className="mt-1.5 text-base tracking-tight text-orange-900">
         {day.summary}
       </p>
     </>
@@ -242,11 +242,11 @@ function TimeSlots({ day, className }: { day: Day; className?: string }) {
           {timeSlotIndex > 0 && (
             <div className="mx-auto mb-8 h-px w-48 bg-indigo-500/10" />
           )}
-          <h4 className="text-lg font-semibold tracking-tight text-blue-900">
+          <h4 className="text-lg font-semibold tracking-tight text-orange-900">
             {timeSlot.name}
           </h4>
           {timeSlot.description && (
-            <p className="mt-1 tracking-tight text-blue-900">
+            <p className="mt-1 tracking-tight text-orange-900">
               {timeSlot.description}
             </p>
           )}
@@ -283,10 +283,10 @@ export function Schedule() {
     <section id="schedule" aria-label="Schedule" className="py-20 sm:py-32">
       <Container className="relative z-10">
         <div className="mx-auto max-w-2xl lg:mx-0 lg:max-w-4xl lg:pr-24">
-          <h2 className="font-display text-4xl font-medium tracking-tighter text-blue-600 sm:text-5xl">
+          <h2 className="font-display text-4xl font-medium tracking-tighter text-orange-600 sm:text-5xl">
             Our schedule for the year
           </h2>
-          <p className="mt-4 font-display text-2xl tracking-tight text-blue-900">
+          <p className="mt-4 font-display text-2xl tracking-tight text-orange-900">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia consequatur soluta nisi error nihil est in voluptate tenetur, reprehenderit quam quod harum odit officiis corrupti? Numquam facere reprehenderit similique voluptatem!
           </p>
         </div>
