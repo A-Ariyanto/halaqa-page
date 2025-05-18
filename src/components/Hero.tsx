@@ -14,7 +14,7 @@ export function Hero() {
           </h1>
           <div className="mt-6 space-y-6 font-display text-2xl tracking-tight text-orange-900">
             <p>
-              Uni can feel really lonely sometimes — especially when you're buried under assignments 
+              University can feel really lonely sometimes — especially when you're buried under assignments 
               and deadlines. And you're not alone in feeling that. Many students feel disconnected, 
               even in a busy campus like this.
             </p>

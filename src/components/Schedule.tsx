@@ -287,7 +287,8 @@ export function Schedule() {
             Our schedule for the year
           </h2>
           <p className="mt-4 font-display text-2xl tracking-tight text-orange-900">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia consequatur soluta nisi error nihil est in voluptate tenetur, reprehenderit quam quod harum odit officiis corrupti? Numquam facere reprehenderit similique voluptatem!
+            Our team has prepared exciting events for you this year. We hope to see you
+            at all of them inshaAllah!
           </p>
         </div>
       </Container>
