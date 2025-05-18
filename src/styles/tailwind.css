@@ -37,3 +37,7 @@
 
   --container-2xl: 40rem;
 }
+
+html {
+  scroll-behavior: smooth;
+}
