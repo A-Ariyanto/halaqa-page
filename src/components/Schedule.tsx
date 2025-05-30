@@ -6,6 +6,7 @@ import clsx from 'clsx'
 
 import { BackgroundImage } from '@/components/BackgroundImage'
 import { Container } from '@/components/Container'
+import { StringLiteral } from 'typescript'
 
 interface Day {
   date: React.ReactNode
@@ -14,6 +15,7 @@ interface Day {
   timeSlots: Array<{
     name: string
     description: string | null
+    day: string
     start: string
     end: string
   }>
@@ -24,55 +26,63 @@ const schedule: Array<Day> = [
     date: 'Term 1',
     dateTime: '17-02-2025',
     summary:
-      'Ramadhan is a month of fasting, prayer, reflection and community.',
+      '17th February until 15th May 2025',
     timeSlots: [
       {
         name: 'Week 1',
         description: 'Importance of Community and Faith',
-        start: '',
-        end: '',
+        day: 'Thursday',
+        start: '6:00 PM',
+        end: '8:00 PM',
       },
       {
         name: 'Week 2',
         description: 'Preparations for Ramadan',
-        start: '',
-        end: '',
+        day: 'Thursday',
+        start: '6:00 PM',
+        end: '8:00 PM',
       },
       {
         name: 'Week 3',
         description: 'Ramadhan: Tilawah & tadabbur',
-        start: '',
-        end: '',
+        day: 'Thursday',
+        start: '6:00 PM',
+        end: '7:00 PM',
       },
       {
         name: 'Week 4',
         description: 'Ramadhan: Tilawah & tadabbur',
-        start: '',
-        end: '',
+        day: 'Thursday',
+        start: '6:00 PM',
+        end: '7:00 PM',
       },
       {
         name: 'Week 5',
         description: 'Ramadhan: Tilawah & tadabbur',
-        start: '',
-        end: '',
+        day: 'Thursday',
+        start: '6:00 PM',
+        end: '7:00 PM',
       },
       {
         name: 'Week 6',
         description: 'Rabbani Generation',
-        start: '',
-        end: '',
+        day: 'Thursday',
+        start: '6:00 PM',
+        end: '8:00 PM',
       },
       {
         name: 'Week 7',
         description: 'The Role of Charity in Islam',
-        start: '',
-        end: '',
+        day: 'Thursday',
+        start: '5:30 PM',
+        end: '7:30 PM',
       },
       {
         name: 'Week 8',
         description: 'Dawah and tarbiyah',
-        start: '',
-        end: '',
+        day: 'Thursday',
+        start: '5:30 PM',
+        end: '7:30 PM',
       },
     ],
   },
@@ -80,55 +90,63 @@ const schedule: Array<Day> = [
     date: 'Term 2',
     dateTime: '02-06-2025',
     summary:
-      'Eid al-Adha is the second of two Islamic holidays celebrated worldwide each year.',
+      '2nd June until 28th August 2025',
     timeSlots: [
       {
         name: 'Week 1',
-        description: '',
-        start: '',
-        end: '',
+        description: 'Ukhuwah',
+        day: 'Thursday',
+        start: '12:30 PM',
+        end: '2:00 PM',
       },
       {
         name: 'Week 2',
-        description: '',
-        start: '',
-        end: '',
+        description: 'Importance of Tarbiyyah',
+        day: 'Thursday',
+        start: '12:30 PM',
+        end: '2:00 PM',
       },
       {
         name: 'Week 3',
         description: 'Movie Night – Da’wah Through Stories',
-        start: '',
-        end: '',
+        day: 'Thursday',
+        start: '12:30 PM',
+        end: '3:00 PM',
       },
       {
         name: 'Week 4',
-        description: '',
-        start: '',
-        end: '',
+        description: 'Charity and Volunteering + Food distribution with MyFundAction',
+        day: 'Thursday',
+        start: '12:30 PM',
+        end: '2:00 PM',
       },
       {
         name: 'Week 5',
         description: 'Iftar Jama’ie (Community Iftar)',
-        start: '',
-        end: '',
+        day: 'Thursday',
+        start: '5:00 PM',
+        end: '6:30 PM',
       },
       {
         name: 'Week 6',
         description: 'O-Week Trip with MyFundAction',
-        start: '',
-        end: '',
+        day: 'Wednesday',
+        start: '7:00 AM',
+        end: '7:00 PM',
       },
       {
         name: 'Week 7',
         description: 'Sports & Brotherhood – ISOC Football',
-        start: '',
-        end: '',
+        day: 'Friday',
+        start: '2:00 PM',
+        end: '3:00 PM',
       },
       {
         name: 'Week 8',
         description: 'Reflections & Celebrations',
-        start: '',
-        end: '',
+        day: 'Thursday',
+        start: '12:30 PM',
+        end: '2:00 PM',
       },
     ],
   },
@@ -136,11 +154,12 @@ const schedule: Array<Day> = [
     date: 'Term 3',
     dateTime: '15-09-2025',
     summary:
-      'We are close to the end of the year. So make sure to make the most of it.',
+      '15th September until 11th December 2025',
     timeSlots: [
       {
         name: 'TBA',
         description: '',
+        day: '',
         start: '',
         end: '',
       }
@@ -251,6 +270,7 @@ function TimeSlots({ day, className }: { day: Day; className?: string }) {
             </p>
           )}
           <p className="mt-1 font-mono text-sm text-slate-500">
+            {timeSlot.day},{' '}
             <time dateTime={`${day.dateTime}T${timeSlot.start}-08:00`}>
               {timeSlot.start}
             </time>{' '}
