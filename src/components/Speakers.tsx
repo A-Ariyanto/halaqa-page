@@ -18,8 +18,8 @@ import amjadProfileImage from '@/images/avatars/speaker.png'
 
 const teams = [
   {
-    name: 'Our',
-    title: 'Speakers',
+    name: 'Speakers',
+    title: 'Test',
     sectionNumber: '1',
     speakers: [
       {
@@ -35,8 +35,8 @@ const teams = [
     ],
   },
   {
-    name: 'Our',
-    title: 'Volunteers',
+    name: 'Volunteers',
+    title: 'Test',
     sectionNumber: '2',
     speakers: [
       {
