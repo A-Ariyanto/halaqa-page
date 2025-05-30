@@ -15,11 +15,9 @@ import granataProfileImage from '@/images/avatars/granata.png'
 import aqifProfileImage from '@/images/avatars/aqif.png'
 import amjadProfileImage from '@/images/avatars/speaker.png'
 
-
 const teams = [
   {
     name: 'Speakers',
-    title: 'Test',
     sectionNumber: '1',
     speakers: [
       {
@@ -36,7 +34,6 @@ const teams = [
   },
   {
     name: 'Volunteers',
-    title: 'Test',
     sectionNumber: '2',
     speakers: [
       {
@@ -65,7 +62,7 @@ const teams = [
         image: ramzyProfileImage,
       },
     ],
-  }
+  },
 ]
 
 function ImageClipPaths({
@@ -124,7 +121,8 @@ export function Speakers() {
             Meet our team!
           </h2>
           <p className="mt-4 font-display text-2xl tracking-tight text-orange-900">
-            Learn from our volunteers from different backgrounds and experiences.
+            Learn from our volunteers from different backgrounds and
+            experiences.
           </p>
         </div>
         <TabGroup
@@ -149,7 +147,7 @@ export function Speakers() {
                       <div className="relative">
                         <div
                           className={clsx(
-                            'font-mono text-sm',
+                            'font-mono text-lg font-semibold',
                             dayIndex === selectedIndex
                               ? 'text-orange-600'
                               : 'text-orange-500',
