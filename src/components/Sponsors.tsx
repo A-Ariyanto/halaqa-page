@@ -2,13 +2,14 @@ import Image from 'next/image'
 
 import { Container } from '@/components/Container'
 import isocLogo from '@/images/logos/ISOC-UNSW-Logo.png'
-import myFundActionLogo from '@/images/logos/my-fund-action-logo.png'
+import myFundActionLogo from '@/images/logos/my-fund-action-logo-new.avif'
 import yoshHalaqaLogo from '@/images/logos/yosh-logo.png'
+import arcClubLogo from '@/images/logos/arc-club-logo.png'
 
 const sponsors = [
   { name: 'ISOC', logo: isocLogo },
   { name: 'MyFundAction', logo: myFundActionLogo },
-  { name: 'Yosh Halaqa', logo: yoshHalaqaLogo },
+  { name: 'ARC Club', logo: arcClubLogo },
 ]
 
 export function Sponsors() {
